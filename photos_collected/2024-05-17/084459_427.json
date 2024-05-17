@@ -1,0 +1,13 @@
+{
+  "File name": "084459_427.jpg",
+  "Create Date": "2024-05-17",
+  "Create Seconds Epoch": 1715931899,
+  "Trigger": null,
+  "Subject Distance": "0.1819836215 m",
+  "Exposure Time": "1/245",
+  "ISO": 112,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a photo of a window with light coming through it. "
+  }
+}

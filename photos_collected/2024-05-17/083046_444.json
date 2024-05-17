@@ -1,0 +1,13 @@
+{
+  "File name": "083046_444.jpg",
+  "Create Date": "2024-05-17",
+  "Create Seconds Epoch": 1715931046,
+  "Trigger": null,
+  "Subject Distance": "1 m",
+  "Exposure Time": "1/46",
+  "ISO": 113,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a photo of an indoor ceiling, taken from a low angle. The ceiling appears to have recessed lighting and possibly some ventilation or ductwork. There are two circular lights visible, one near the center and another towards the right edge of the image. "
+  }
+}

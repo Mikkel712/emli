@@ -1,0 +1,13 @@
+{
+  "File name": "084735_930.jpg",
+  "Create Date": "2024-05-17",
+  "Create Seconds Epoch": 1715932055,
+  "Trigger": "Time",
+  "Subject Distance": "0.1747030049 m",
+  "Exposure Time": "1/247",
+  "ISO": 112,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " The image displays a small window on a building, seen from the outside through another window. "
+  }
+}
