@@ -1,0 +1,13 @@
+{
+  "File name": "180352_768.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915832,
+  "Trigger": "Time",
+  "Subject Distance": 0.5659309564,
+  "Exposure Time": "1/59",
+  "ISO": 113,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a composite image showing a progression of time with a herd of animals, set against a field, in front of a building. "
+  }
+}

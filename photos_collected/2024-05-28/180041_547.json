@@ -1,0 +1,13 @@
+{
+  "File name": "180041_547.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915641,
+  "Trigger": "Time",
+  "Subject Distance": 0.8045052293,
+  "Exposure Time": "1/76",
+  "ISO": 114,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a picture of a monitor displaying two different images, with the upper half showing a person walking across an image of a field and a dirt road, and the lower half displaying a scene from what appears to be a movie or television show featuring an animal, possibly a dog or a large cat, walking behind a human figure in an open landscape. The monitor is set against a wall with a tile-like pattern. "
+  }
+}

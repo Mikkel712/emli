@@ -1,0 +1,13 @@
+{
+  "File name": "180325_350.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915805,
+  "Trigger": "Time",
+  "Subject Distance": 0.5336179296,
+  "Exposure Time": "1/77",
+  "ISO": 114,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " The image is of a television screen displaying an image of two lions standing in the grass. "
+  }
+}

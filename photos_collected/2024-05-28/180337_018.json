@@ -1,0 +1,13 @@
+{
+  "File name": "180337_018.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915817,
+  "Trigger": "Motion",
+  "Subject Distance": 0.5652911249,
+  "Exposure Time": "1/64",
+  "ISO": 114,
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a composite image showing a sequence of photos with an overlaid timeline, indicating that they are part of a video. The content includes a variety of scenes, primarily featuring livestock in pastoral settings, such as fields and a watering hole. "
+  }
+}
