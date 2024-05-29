@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+
+<Directory /var/www/html>
+    AllowOverride All
+</Directory>

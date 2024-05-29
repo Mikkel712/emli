@@ -1,0 +1,16 @@
+
+#Time trigger  every 5 minutes
+
+time_start=$(date +%s)
+while true; do
+time_current=$(date +%s)
+delta_time=$((time_current-time_start))
+#echo $delta_time
+#timer = 5
+if [ $delta_time -eq 5 ] #*60
+then
+   #./take_photo.sh
+   
+   echo "photo taken"
+fi
+done

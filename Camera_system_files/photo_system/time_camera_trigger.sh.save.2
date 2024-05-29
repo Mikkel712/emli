@@ -1,0 +1,14 @@
+
+#Time trigger  every 5 minutes
+time_start=$(date +%s)
+while true; do
+    time_current=$(date +%s)
+    delta_time=$((time_current - time_start))
+    if [ $delta_time -ge 5 ]; then #5 minutes
+        ./take_photo.sh
+        #echo "5 minutes have passed"
+        time_start=$(date +%s) # Reset timer
+    fi
+    sleep 1 # Avoid spam loop
+done
+
