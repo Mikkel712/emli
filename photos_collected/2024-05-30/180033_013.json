@@ -1,0 +1,17 @@
+{
+  "File name": "180033_013.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915633,
+  "Trigger": "Motion",
+  "Subject Distance": 0.9182736455,
+  "Exposure Time": "1/81",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070616.799362708"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " A photo montage capturing two different scenes: a zebra in a field and a volcano. "
+  }
+}

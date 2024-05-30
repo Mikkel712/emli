@@ -1,0 +1,17 @@
+{
+  "File name": "132350_126.jpg",
+  "Create Date": "2024-05-30",
+  "Create Seconds Epoch": 1717068230,
+  "Trigger": "Manual",
+  "Subject Distance": 1,
+  "Exposure Time": "1/84",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070535.211585542"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " The image shows a blurry sky with no clear features, creating an abstract and minimalist effect. "
+  }
+}

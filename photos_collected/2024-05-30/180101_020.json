@@ -1,0 +1,17 @@
+{
+  "File name": "180101_020.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915661,
+  "Trigger": "Motion",
+  "Subject Distance": 0.8598452279,
+  "Exposure Time": "1/100",
+  "ISO": 115,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070683.935752086"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a digital image that has been split into vertical strips, each containing different parts of the picture. The central focus of the image appears to be an animal standing on what seems to be a rocky surface with some vegetation and possibly a body of water in the background. "
+  }
+}

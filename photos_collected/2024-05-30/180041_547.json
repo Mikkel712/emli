@@ -1,0 +1,17 @@
+{
+  "File name": "180041_547.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915641,
+  "Trigger": "Time",
+  "Subject Distance": 0.8045052293,
+  "Exposure Time": "1/76",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070638.381613701"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a photo collage featuring the image of a large cow in motion on a dirt path, overlaid with additional images and text. "
+  }
+}

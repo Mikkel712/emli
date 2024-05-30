@@ -1,0 +1,17 @@
+{
+  "File name": "180019_012.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915619,
+  "Trigger": "Motion",
+  "Subject Distance": 0.6915629322,
+  "Exposure Time": "1/62",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070587.722563992"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This is a composite image with two separate photographs. The upper photo shows a herd of wild animals, likely wildebeests or antelope, in a natural setting. The lower photo displays a domestic scene featuring a person in a room standing behind an aquarium. "
+  }
+}

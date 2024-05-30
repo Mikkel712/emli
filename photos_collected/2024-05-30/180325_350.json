@@ -1,0 +1,17 @@
+{
+  "File name": "180325_350.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915805,
+  "Trigger": "Time",
+  "Subject Distance": 0.5336179296,
+  "Exposure Time": "1/77",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070727.437746152"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " A digital art piece featuring a surreal scene of lions in the wild, standing in a field with trees in the background. "
+  }
+}

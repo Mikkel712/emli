@@ -1,0 +1,17 @@
+{
+  "File name": "180351_016.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915831,
+  "Trigger": "Motion",
+  "Subject Distance": 0.545553737,
+  "Exposure Time": "1/43",
+  "ISO": 113,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070777.034934991"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " The image is a composite of several photos showing an animal, likely a bison or yak, standing in the foreground with a blurred background. "
+  }
+}

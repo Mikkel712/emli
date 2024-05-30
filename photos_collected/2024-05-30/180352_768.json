@@ -1,0 +1,17 @@
+{
+  "File name": "180352_768.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915832,
+  "Trigger": "Time",
+  "Subject Distance": 0.5659309564,
+  "Exposure Time": "1/59",
+  "ISO": 113,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070789.244888395"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " This image is a composite of several photos, showing cows grazing in a field and a person standing beside them. The topmost photo shows the backsides of three cows with grass under their feet, and below that is another photo of more cows in the same grassy field. The bottom part of the image features the person standing outside in the daytime, looking toward the camera, with trees and sky visible. The image has been edited together to create a seamless sequence of photos, giving an impression of movement across the scene. "
+  }
+}

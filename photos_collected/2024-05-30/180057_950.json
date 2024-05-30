@@ -1,0 +1,17 @@
+{
+  "File name": "180057_950.jpg",
+  "Create Date": "2024-05-28",
+  "Create Seconds Epoch": 1716915657,
+  "Trigger": "Trigger",
+  "Subject Distance": 0.9208103131,
+  "Exposure Time": "1/92",
+  "ISO": 114,
+  "Drone Copy": {
+    "Drone ID": "WILDDRONE-001",
+    "Seconds Epoch": "1717070673.796894401"
+  },
+  "Annotation": {
+    "Source": "Ollama:7b",
+    "Result": " A picture of a giraffe in the wild, with a focus on its head and neck. "
+  }
+}
