@@ -47,6 +47,11 @@ EOF
 NOW=$(date +'%Y-%m-%d')
 echo "Current date: $NOW"
 
+# Synchronize the raspberry pi with the drone time
+sudo ssh nates@192.168.10.1 sudo "date -s '$(date)'"
+
+
+
 #create folder with the name of the current date
 mkdir -p "$LOCAL_DIRECTORY/$NOW"
 
@@ -83,10 +88,12 @@ while true; do
                     seconds_epoch=$(date +%s.%N)
                     jq --arg seconds_epoch "$seconds_epoch" '. + {"Drone Copy": {"Drone ID": "WILDDRONE-001", "Seconds Epoch": $seconds_epoch}}' "$json_file" > "$json_file.tmp" && mv "$json_file.tmp" "$json_file"
                     
-                    # Ollama annotation is 
+                    # Ollama annotation is    
+                    jpg_file="${json_file%.*}".jpg
+                    
+
                     ollama_output=$(ollama run llava:7b "describe \"$jpg_file\" in a single sentence")
-                    echo "ollama_output:"
-                    echo $ollama_output
+                    echo "ollama_output: " $ollama_output
                         
                         # insert ollama_output into JSON file
                     jq --arg ollama_output "$ollama_output" '. + {"Annotation": {"Source": "Ollama:7b", "Result": $ollama_output}}' "$json_file" > "$json_file.tmp" && mv "$json_file.tmp" "$json_file"
