@@ -64,30 +64,38 @@ while true; do
                 
         # connecting to the Wi-Fi network
         if nmcli device wifi connect "$SSID"; then
-            # get the new images from the wildlife camera
-            sshpass -p "$PASSWORD" scp "$PI_USERNAME@$PI_HOST:$PI_DIRECTORY/$NOW/*.jpg" "$LOCAL_DIRECTORY/$NOW"
-            sshpass -p "$PASSWORD" scp "$PI_USERNAME@$PI_HOST:$PI_DIRECTORY/$NOW/*.json" "$LOCAL_DIRECTORY/$NOW"
+            # get the new images from the wildlife camera            
+            sshpass -p "$PASSWORD" scp -r "$PI_USERNAME@$PI_HOST:$PI_DIRECTORY/$NOW" "$LOCAL_DIRECTORY"
+
             
-            # iterate over JPG files
-            for jpg_file in "$LOCAL_DIRECTORY/$NOW"/*.jpg; do
-                filename=$(basename "$jpg_file")
-                json_file="${jpg_file%.jpg}.json"
-                
-                # check if JSON file exists
-                if [ -f "$json_file" ]; then
+
+            for json_file in "$LOCAL_DIRECTORY/$NOW"/*.json; do
+
+                if jq -e 'has("Drone Copy")' "$json_file" > /dev/null; then #https://www.geeksforgeeks.org/what-is-dev-null-in-linux/ #https://stackoverflow.com/questions/75769972/jq-possible-to-use-has-with-nested-keys
+                    echo "Skipping file"
+                else
+                    echo "Extracting file from camera system!"
+
+                    sshpass -p "$PASSWORD" scp "$PI_USERNAME@$PI_HOST:$PI_DIRECTORY/$NOW/$(basename "$json_file")" "$LOCAL_DIRECTORY/$NOW/$(basename "$json_file")"
                     
-                    #echo "this is what you give the ai"
-                    #echo "describe \"$jpg_file\""
+                    # functional requirement I)
+                    echo "Annotate within JSON file"
+                    seconds_epoch=$(date +%s.%N)
+                    jq --arg seconds_epoch "$seconds_epoch" '. + {"Drone Copy": {"Drone ID": "WILDDRONE-001", "Seconds Epoch": $seconds_epoch}}' "$json_file" > "$json_file.tmp" && mv "$json_file.tmp" "$json_file"
+                    
+                    # Ollama annotation is 
                     ollama_output=$(ollama run llava:7b "describe \"$jpg_file\" in a single sentence")
                     echo "ollama_output:"
                     echo $ollama_output
-                    
-                    # insert ollama_output into JSON file
+                        
+                        # insert ollama_output into JSON file
                     jq --arg ollama_output "$ollama_output" '. + {"Annotation": {"Source": "Ollama:7b", "Result": $ollama_output}}' "$json_file" > "$json_file.tmp" && mv "$json_file.tmp" "$json_file"
 
-                    # functional requirement I)
-                    # seconds_epoch=$(date +%s.%N)
-                    # jq --arg seconds_epoch "$seconds_epoch" '. + {"Drone Copy": {"Drone ID": "WILDDRONE-001", "Seconds Epoch": $seconds_epoch}}' "$json_file" > "$json_file.tmp" && mv "$json_file.tmp" "$json_file"
+                    
+                    echo "Send file back to camera"
+                    sshpass -p "$PASSWORD" scp "$LOCAL_DIRECTORY/$NOW/$(basename "$json_file")" "$PI_USERNAME@$PI_HOST:$PI_DIRECTORY/$NOW/$(basename "$json_file")"   
+
+
                 fi
             done
 
